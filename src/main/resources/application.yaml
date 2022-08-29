@@ -1,0 +1,20 @@
+# 第一行只写注释或者直接空着
+spring:
+  # 邮箱设置，发送注册账号的验证码
+  mail:
+    host: smtp.163.com
+    username: zjy18613237931@163.com
+    # 密码是在邮箱开启smtp/pop3时自动生成的
+    password: JREUGXLTCOONXOVD
+  # 连接mysql
+  datasource:
+    url: jdbc:mysql://localhost:3306/book_manage
+    username: root
+    password: 92010511
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  # 连接redis
+  redis:
+    host: localhost
+  # 静态资源
+  mvc:
+    static-path-pattern: /static/**
