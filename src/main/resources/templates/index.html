@@ -280,9 +280,10 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="login.html">
-                                            <i class="fas fa-sign-out-alt"></i> logout
-                                        </a>
+                                        <form action="logout" method="post">
+                                            <input type="text" th:name="${_csrf.getParameterName}" th:value="${_csrf.token}" hidden/>
+                                            <button type="submit" class="btn btn-primary">退出</button>
+                                        </form>
                                     </li>
                                 </ul>
                             </div>
